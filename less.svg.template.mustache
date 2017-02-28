@@ -1,0 +1,22 @@
+{{#hasMixin}}.{{mixinName}}() {
+	background: url("{{{sprite}}}") no-repeat;
+}
+
+{{#hasCommon}}.{{commonName}} {
+	.{{mixinName}}();
+}
+
+{{/hasCommon}}{{/hasMixin}}{{^hasMixin}}.{{commonName}}{{^hasCommon}}(){{/hasCommon}} {
+	background: url("{{{sprite}}}") no-repeat;
+}
+
+{{/hasMixin}}{{#shapes}}{{#selector.shape}}{{expression}}{{^last}},
+{{/last}}(@width, @height){{/selector.shape}} {
+	{{^hasCommon}}{{#hasMixin}}.{{mixinName}}();{{/hasMixin}}{{^hasMixin}}.{{commonName}}();{{/hasMixin}}
+	{{/hasCommon}}background-position: {{position.relative.xy}};
+	background-size: @width*@svg-icon-count @height*@svg-icon-count;
+	width: @width;
+	height: @height;
+}
+
+{{/shapes}}
