@@ -14,13 +14,13 @@ var clean            = require('gulp-dest-clean');       // очистка
 var sourcemaps       = require('gulp-sourcemaps');       // sourcemaps
 var rename           = require('gulp-rename');           // переименвоание файлов
 var plumber          = require('gulp-plumber');          // предохранитель для остановки гальпа
-var concat           = require('gulp-concat');           // конкатизация 
+var concat           = require('gulp-concat');           // конкатизация
 var replace          = require('gulp-replace');          // замена файлов
 var watch            = require('gulp-watch');            // расширение возможностей watch
 var browserSync      = require('browser-sync').create(); // лайврелоад и сервер
 var size             = require('gulp-size');             // отображение размера файлов в консоли
 var reporter         = require('gulp-less-reporter');    // отображение ошибок при компиляции less
-var ghpages          = require('gh-pages');              // публикация на gh-pages
+var ghpages          = require('gulp-gh-pages');         // публикация на gh-pages
 var svgSprite        = require('gulp-svg-sprite');       // сборка svg спрайта
 var newer            = require('gulp-newer');
 var notify           = require('gulp-notify');           // вывод уведомлений
@@ -41,14 +41,14 @@ var path = {
         htaccess     : 'build/'
     },
     src: {                                               // Пути откуда брать исходники
-        html         : 'src/*.html',                    
-        js           : 'src/js/[^_]*.js',                
+        html         : 'src/*.html',
+        js           : 'src/js/[^_]*.js',
         jshint       : 'src/js/*.js',
         css          : 'src/less/style.less',
         less         : 'src/less/',
-        img          : 'src/img/',      
+        img          : 'src/img/',
         fonts        : 'src/fonts/**/*.*',
-        png2x        : 'src/img/png-sprite/*-2x.png',    
+        png2x        : 'src/img/png-sprite/*-2x.png',
         htaccess     : 'src/.htaccess'
     },
     watch: {                                             //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
@@ -122,7 +122,7 @@ gulp.task('less', function() {
     .pipe( sourcemaps.init() )                        // инициируем карту кода
     .pipe( less({                                     // компилируем LESS
         plugins: [group]
-    }) )                                           
+    }) )
     .on('error', reporter)
     .pipe( autoprefixer({                             // добавляем префиксы
         browsers: ['last 2 versions']
@@ -134,8 +134,8 @@ gulp.task('less', function() {
         title    : 'Common CSS'
     }) )
     .pipe( gulp.dest(path.build.css) )                // записываем CSS-файл (путь из константы)
-    .pipe( rename('style.min.css') )                  // переименовываем         
-    .pipe( cleanCSS() )                               // сжимаем          
+    .pipe( rename('style.min.css') )                  // переименовываем
+    .pipe( cleanCSS() )                               // сжимаем
     .pipe( sourcemaps.write('/') )                    // записываем карту кода как отдельный файл (путь из константы)
     .pipe( size({
         showFiles: true,
@@ -143,7 +143,7 @@ gulp.task('less', function() {
         title    : 'Minified CSS'
     }) )
     .pipe( gulp.dest(path.build.css) )                // записываем CSS-файл (путь из константы)
-    .pipe( reload({stream: true}) )                
+    .pipe( reload({stream: true}) )
 });
 
 // ЗАДАЧА: очистка директории /build
@@ -169,7 +169,7 @@ gulp.task('server', function () {
 gulp.task('image:opt', function () {
   gulp.src([path.src.img + '*.{gif,png,jpg,jpeg,svg}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
       '!' + path.src.img + '/svg-sprite/*.svg',
-      '!' + path.src.img + '/png-sprite/*.png'])                        
+      '!' + path.src.img + '/png-sprite/*.png'])
     .pipe( plumber({errorHandler: onError}) )
     .pipe( imagemin({                                  // Сожмем их
         progressive      : true,                       // сжатие .jpg
@@ -191,7 +191,7 @@ gulp.task('image:opt', function () {
 gulp.task('img', function () {
   return gulp.src([path.src.img + '*.{gif,png,jpg,jpeg,svg}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
              '!' + path.src.img + '/svg-sprite/*.svg',
-             '!' + path.src.img + '/png-sprite/*.png'])             
+             '!' + path.src.img + '/png-sprite/*.png'])
     .pipe( plumber({errorHandler: onError}) )
     .pipe( newer(path.build.img) )                            // оставить в потоке только новые файлы (сравниваем с содержимым папки билда)
     .pipe( gulp.dest(path.build.img) );                       // записываем файлы (путь из константы)
@@ -208,8 +208,8 @@ gulp.task('png:sprite', function () {
         cssName   	: 'sprite.less',
         cssFormat 	: 'less',
         padding		: 4,
-        cssTemplate	: 'less.template.mustache', 
-        imgPath     : '../img/' + fileName      
+        cssTemplate	: 'less.template.mustache',
+        imgPath     : '../img/' + fileName
         // retinaSrcFilter: path.src.png2x,
         // retinaImgName: + fileName2x,
         // retinaImgPath: '../img/' + fileName2x,
@@ -239,7 +239,7 @@ gulp.task('svg:sprite', function () {
                 bust   : false,
                 render : {
                     less: {
-                        dest     : './../../src/less/sprite.less',    // путь к генерируемому less файлу, указваемый _от_ располажения создаваемого спрайта (icon-sprite.svg)  
+                        dest     : './../../src/less/sprite.less',    // путь к генерируемому less файлу, указваемый _от_ располажения создаваемого спрайта (icon-sprite.svg)
                         template : "less.svg.template.mustache"       // файл шаблона для sprite.less, располажение в корневой директории проекта
                     }
                 }

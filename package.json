@@ -7,7 +7,6 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
     "browser-sync": "latest",
-    "gh-pages": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-concat": "latest",
@@ -15,6 +14,7 @@
     "gulp-csso": "latest",
     "gulp-dest-clean": "latest",
     "gulp-file-include": "latest",
+    "gulp-gh-pages": "latest",
     "gulp-imagemin": "latest",
     "gulp-jshint": "latest",
     "gulp-less": "latest",
