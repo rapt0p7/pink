@@ -1,10 +1,9 @@
 {
-  "name": "Base Starter Pack",
+  "name": "pink",
   "version": "0.1.0",
   "private": true,
-  "description": "Базовый стартовый репозиторий для проетов с Gulp/LESS",
+  "description": "Учебный проект Pink",
   "author": "Igor Zabrodin",
-  "license": "MIT",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
     "browser-sync": "latest",
