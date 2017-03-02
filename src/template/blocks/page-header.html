@@ -1,8 +1,10 @@
 <header class="page-header">
 	<div class="page-header__container">
-		<a href="#" class="logo">
-			<img src="" alt="">
-		</a>
+		@@include('logo.html')
+		<span class="hamburger-menu">
+			<svg class="hamburger-menu__icon"><use xlink:href="img/symbol-defs.svg#icon-menu-burger"></use></svg>
+			<svg class="hamburger-menu__icon  hamburger-menu__icon--cross"><use xlink:href="img/symbol-defs.svg#icon-menu-cross"></use></svg>
+		</span>
 		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
