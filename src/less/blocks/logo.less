@@ -1,0 +1,48 @@
+.logo {
+	height: 22px;
+
+	&__icon {
+		display: inline-block;
+		vertical-align: top;
+		width: 147px;
+		height: 40px;
+		margin-top: -9px;
+		display: none;
+
+		&--mobile {
+			display: block;
+			width: 75px;
+  			height: 22px;
+  			margin-top: 0;
+		}
+	}
+}
+
+@media @tablet-widths {
+	.logo {
+	height: 40px;
+
+		&__icon {
+
+			&--mobile {
+				display: none;
+			}
+			&--tablet {
+				display: block;
+			}
+		}
+	}
+}
+
+@media @desktop-widths {
+	.logo__icon {
+
+		&--tablet {
+			display: none;
+		}
+
+		&--desktop {
+			display: block;
+		}
+	}
+}
