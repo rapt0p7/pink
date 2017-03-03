@@ -2,6 +2,7 @@
 	background-color: @bg-shadow;
 	position: relative;
 	z-index: 1000;
+	margin-bottom: -66px;
 
 	&__container {
 		.container();
@@ -9,6 +10,11 @@
 		align-items: center;
 		min-height: 66px;
 		justify-content: space-between;
+	}
+
+	&--toggled {
+		background-color: @nav-color;
+		border-bottom: 1px solid #000;
 	}
 }
 
@@ -36,7 +42,7 @@
 .menu {
 	width: 100%;
 	position: absolute;
-	top: 100%;
+	top: 101%;
 	left: 0;
 	display: none;
 
@@ -56,11 +62,6 @@
 		border-bottom: 1px solid #000;
 		text-align: center;
 		background-color: @nav-color;
-
-		&:nth-child(1) {
-			border-top-color: transparent;
-		}
-
 	}
 
 	&__link {
@@ -72,6 +73,10 @@
 }
 
 @media @tablet-widths {
+	.page-header {
+		margin-bottom: -110px;
+	}
+
 	.page-header__container {
 		min-height: 110px;
 	}
@@ -80,6 +85,11 @@
 @media @desktop-widths {
 	.page-header__container {
 		.clearfix();
+	}
+
+	.page-header--toggled {
+		background-color: @bg-shadow;
+		border-style: none;
 	}
 
 	.hamburger-menu {
