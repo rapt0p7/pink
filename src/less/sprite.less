@@ -1,0 +1,28 @@
+.svg-common() {
+	background: url("../img/icon-sprite.svg") no-repeat;
+}
+
+.svg-logo-android(@width, @height) {
+	.svg-common();
+	background-position: 0 0;
+	background-size: @width*@svg-icon-count @height*@svg-icon-count;
+	width: @width;
+	height: @height;
+}
+
+.svg-logo-apple(@width, @height) {
+	.svg-common();
+	background-position: 49.16968178866315% 52.60770975056689%;
+	background-size: @width*@svg-icon-count @height*@svg-icon-count;
+	width: @width;
+	height: @height;
+}
+
+.svg-logo-microsoft(@width, @height) {
+	.svg-common();
+	background-position: 99.92732558139535% 99.99200063994881%;
+	background-size: @width*@svg-icon-count @height*@svg-icon-count;
+	width: @width;
+	height: @height;
+}
+
