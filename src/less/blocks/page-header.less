@@ -4,17 +4,19 @@
 	z-index: 1000;
 	margin-bottom: -66px;
 
+
 	&__container {
 		.container();
 		display: flex;
 		align-items: center;
 		min-height: 66px;
 		justify-content: space-between;
+		border-bottom: 1px solid transparent;
 	}
 
 	&--toggled {
 		background-color: @nav-color;
-		border-bottom: 1px solid #000;
+		border-color: #000;
 	}
 }
 
@@ -27,14 +29,24 @@
 		&--ham {
 			width: 50px;
 			height: 24px;
+			fill: #fff;
 		}
 
 		&--cross {
 			width: 24px;
 			height: 23px;
+			fill: #fff;
 		}
 		&--hidden {
 			display: none;
+		}
+
+		&:hover {
+			fill: #d22856;
+		}
+
+		&:active {
+			opacity: 0.3;
 		}
 	}
 }
@@ -69,6 +81,14 @@
 		text-transform: uppercase;
 		line-height: 32px;
 		font-weight: bold;
+
+		&:hover {
+			color: #d22856;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
 	}
 }
 
@@ -118,6 +138,23 @@
 		&__link {
 			line-height: 18px;
 			font-weight: normal;
+			text-transform: none;
+			padding-bottom: 5px;
+
+			&:hover {
+				border-bottom: 2px solid #fff;
+				color: #fff;
+			}
+
+			&--active:hover {
+				border-bottom: 2px solid #d22856;
+				color: #d22856;
+			}
+
+			&:active {
+				opacity: 0.3;
+				border-style: none;
+			}
 		}
 	}
 }

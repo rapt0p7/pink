@@ -1,6 +1,10 @@
 .logo {
 	height: 22px;
 
+	&:active {
+		opacity: 0.3;
+	}
+
 	&__icon {
 		display: inline-block;
 		vertical-align: top;
@@ -27,8 +31,17 @@
 			&--mobile {
 				display: none;
 			}
+
+			&--tablet-pink {
+				display: block;
+			}
+
 			&--tablet {
 				display: block;
+				margin-top: -27%;
+				&:hover {
+					opacity: 0;
+				}
 			}
 		}
 	}
@@ -41,8 +54,20 @@
 			display: none;
 		}
 
+		&--tablet-pink {
+			display: none;
+		}
+
+		&--desktop-pink {
+			display: block;
+		}
+
 		&--desktop {
 			display: block;
+			margin-top: -27%;
+			&:hover {
+				opacity: 0;
+			}
 		}
 	}
 }
