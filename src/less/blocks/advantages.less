@@ -1,0 +1,260 @@
+.advantages {
+
+	&__inner {
+		background-color: @bg-grey;
+	}
+
+	&__header {
+		background-color: #fff;
+		position: relative;
+		padding-top: 40px;
+		padding-bottom: 31px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 31px;
+			display: block;
+			top: 100%;
+			background-image: url("../img/bg-triangle-white.svg");
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: 100% 31px;
+		}
+	}
+
+	&__heading {
+		.container();
+		font-size: 24px;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 1.1em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__list {
+		.container();
+		display: flex;
+		flex-direction: column;
+		padding-top: 82px;
+		padding-bottom: 360px;
+		background-image: url("../img/iphone-screen-mobile@1x.png");
+		background-repeat: no-repeat;
+		background-position: bottom center;
+	}
+
+	&__item {
+		text-align: center;
+		position: relative;
+		margin-bottom: 32px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 11px;
+
+		&--diagram {
+			padding-left: 310px;
+			font-size: 30px;
+			line-height: 36px;
+			padding-top: 10px;
+		}
+	}
+
+	&__description {
+		font-size: 14px;
+		line-height: 24px;
+
+		&--diagram {
+			padding-left: 310px;
+			padding-bottom: 5px;
+		}
+	}
+
+	&__diagram {
+		display: none;
+		position: relative;
+		background-color: #fff;
+		padding-bottom: 110px;
+		padding-top: 87px;
+		.container();
+
+		&::before {
+			position: absolute;
+			content: '24';
+			font-size: 96px;
+			font-weight: bold;
+			color: @primary-color;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			left: 0;
+			top: 0;
+			width: 240px;
+			height: 100%;
+			background-image: url("../img/icon-editor-diagram-fill.svg"),url("../img/icon-timer.svg");
+			background-repeat: no-repeat, no-repeat;
+			background-position: 49% 52%, center 40%;
+			background-size: 203px 204px, 240px 277px;
+		}
+	}
+
+	&__more {
+		color: @primary-color;
+		text-decoration: underline;
+		font-size: 14px;
+		line-height: 24px;
+		padding-left: 310px;
+	}
+}
+
+@media @tablet-widths {
+	.advantages {
+
+		&__header {
+			padding-top: 49px;
+			padding-bottom: 45px;
+
+			&::after {
+				height: 54px;
+				background-size: 100% 54px;
+			}
+		}
+
+		&__title--diagram {
+			padding-left: 50%;
+			padding-right: 20%;
+		}
+
+		&__heading {
+			font-size: 40px;
+			margin-bottom: 0;
+			line-height: 48px;
+		}
+
+		&__diagram {
+			display: block;
+		}
+
+		&__item {
+			text-align: left;
+			margin-bottom: 35px;
+			padding-left: 50%;
+		}
+
+		&__list {
+			position: relative;
+			padding-top: 77px;
+			padding-bottom: 43px;
+			background-image: url("../img/iphone-screen-3-tablet@1x.png");
+			background-position: bottom left;
+		}
+	}
+}
+
+@media @desktop-widths {
+	.advantages {
+		background-color: @bg-grey;
+
+		&__header {
+			padding-top: 67px;
+			padding-bottom: 75px;
+
+			&::after {
+				height: 95px;
+				background-size: 100% 95px;
+			}
+		}
+
+		&__heading {
+			font-size: 50px;
+			line-height: 60px;
+		}
+
+		&__list {
+			flex-direction: row;
+			padding-left: 0;
+			padding-top: 0;
+			background-image: none;
+		}
+
+		&__item {
+			text-align: center;
+			padding-top: 358px;
+			width: 33.3%;
+			background-repeat: no-repeat;
+			margin-bottom: 0;
+
+				&--mood {
+					background-image: url("../img/iphone-screen-1-desktop@1x.png");
+					padding-left: 18px;
+					padding-right: 30px;
+					background-position: 4px 0;
+				}
+
+				&--world {
+					background-image: url("../img/iphone-screen-2-desktop@1x.png");
+					padding-left: 33px;
+					padding-right: 32px;
+					background-position: 14px 0;
+				}
+
+				&--friend {
+					background-image: url("../img/iphone-screen-3-desktop@1x.png");
+					padding-left: 44px;
+					padding-right: 30px;
+					background-position: 21px 0;
+				}
+		}
+
+		&__diagram {
+			background-color: @bg-grey;
+			padding-top: 107px;
+
+			&::before {
+				width: 300px;
+				font-size: 120px;
+				top: 2px;
+				line-height: 186px;
+				background-position: 49% 54%, center 27%;
+				background-size: 253px 253px, 298px 345px;
+			}
+		}
+
+		&__title {
+				line-height: 30px;
+				font-size: 30px;
+				margin-bottom: 24px;
+
+			&--diagram {
+				padding-left: 367px;
+				padding-top: 10px;
+			}
+		}
+
+		&__description {
+				font-size: 18px;
+				line-height: 30px;
+
+			&--diagram {
+				padding-left: 367px;
+				padding-bottom: 21px;
+			}
+		}
+
+		&__more {
+			font-size: 18px;
+			line-height: 30px;
+			padding-left: 367px;
+		}
+	}
+}
