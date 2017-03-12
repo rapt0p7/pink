@@ -18,3 +18,24 @@ hamburger.addEventListener("click", function(event) {
 			header.classList.add("page-header--toggled");
 		}
 });
+
+var map;
+function initMap() {
+	map = new google.maps.Map(document.getElementById('map-canvas'), {
+		center: {lat: 59.936392, lng:  30.321109},
+		zoom: 17,
+		disableDefaultUI: true
+	});
+
+  	var image = {
+  		url: '../img/icon-map-marker.svg',
+        size: new google.maps.Size(36, 36),
+        origin: new google.maps.Point(0,0),
+        anchor: new google.maps.Point(18, 18)};
+	var myLatLng = new google.maps.LatLng(59.936392,30.3211094);
+	var marker = new google.maps.Marker({
+		position: myLatLng,
+		map: map,
+		icon: image
+	});
+}
