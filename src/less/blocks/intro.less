@@ -1,0 +1,54 @@
+.intro {
+	background-color: @bg-primary;
+	background-image: url(../img/bg-back-mobile@1x.jpg);
+	background-position: top center;
+	background-size: auto 450px;
+	background-repeat: no-repeat;
+
+	&__container {
+		.container();
+		min-height: 236px;
+		padding-top: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__heading {
+		text-align: center;
+		font-size: 24px;
+		font-weight: 300;
+		color: #fff;
+	}
+}
+
+@media @tablet-widths {
+
+	.intro {
+		background-image: url("../img/bg-back-tablet@1x.jpg");
+		background-size: auto 725px;
+
+		&__container {
+			min-height: 440px;
+			padding-top: 100px;
+		}
+
+		&__heading {
+			font-size: 50px;
+			line-height: 60px;
+		}
+	}
+}
+
+@media @desktop-widths {
+
+	.intro {
+		background-image: url("../img/bg-back-desktop@1x.jpg");
+		background-size: auto 850px;
+
+		&__container {
+			min-height: 394px;
+			padding-top: 71px;
+		}
+	}
+}
