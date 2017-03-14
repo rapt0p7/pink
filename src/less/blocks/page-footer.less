@@ -8,11 +8,22 @@
 		padding-top: 40px;
 		padding-bottom: 37px;
 		align-items: center;
+
+			&--form {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+		}
+	}
+
+	&--form {
+		display: block;
 	}
 }
 
 .social-btn {
 	display: flex;
+	margin-top: 49px;
 
 	&__icon {
 		font-size: 0;
@@ -54,6 +65,7 @@
 	font-size: 14px;
 	line-height: 18px;
 	align-items: center;
+	margin-top: 48px;
 	color: @secondary-color;
 
 	&__icon {
@@ -77,12 +89,25 @@
 }
 
 @media @tablet-widths {
+
 	.page-footer {
 		display: block;
 	}
+
+	.page-footer__container {
+		flex-direction: row;
+	}
+
+	.social-btn {
+		margin-top: 0;
+	}
+
+	.copyright {
+		margin-top: 0;
+	}
 }
 
-@media @tablet-widths {
+@media @desktop-widths {
 	.page-footer__container {
 		padding-top: 73px;
 	}
