@@ -1,5 +1,35 @@
 .btn {
 	display: block;
+	cursor: pointer;
+
+	&--square {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: bold;
+		border-style: none;
+		background-color: #2aab6d;
+		color: #fff;
+		text-transform: uppercase;
+		padding-top: 17px;
+		padding-bottom: 16px;
+
+		&:hover {
+			background-color: #1c9b5e;
+		}
+
+		&:active {
+			color: rgba(255, 255, 255, 0.3);
+		}
+
+		&:focus {
+			outline: none;
+			border-style: none;
+		}
+
+		&:disabled {
+			background-color: #e5e5e5;
+		}
+	}
 
 	&--round {
 		font-size: 18px;
