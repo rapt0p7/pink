@@ -2,6 +2,10 @@
 	display: block;
 	cursor: pointer;
 
+	&:focus {
+		outline: none;
+	}
+
 	&--square {
 		font-size: 18px;
 		line-height: 30px;
@@ -62,6 +66,7 @@
 	&--pink {
 		color: #d22856;
 		border-color: #d22856;
+		background-color: transparent;
 
 		&:hover {
 			background-color: #d22856;
@@ -76,6 +81,7 @@
 	&--grey {
 		color: #dddfe0;
 		border-color: #dddfe0;
+		background-color: transparent;
 
 		&:hover {
 			border-color: #b5b9be;
