@@ -1,0 +1,558 @@
+.photos {
+
+	&__heading {
+		.container();
+		padding-top: 45px;
+		padding-bottom: 49px;
+	}
+
+	&__footing {
+		.container();
+		padding-top: 21px;
+		padding-bottom: 42px;
+	}
+
+	&__title {
+		color: @secondary-color;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	&__item {
+		background-color: @bg-grey;
+		margin-bottom: 20px;
+		padding-bottom: 21px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+
+		&--full {
+			background-color: #fff;
+			position: relative;
+			padding-bottom: 0;
+			width: 100%;
+
+			&:before {
+				position: absolute;
+				display: block;
+				content: 'Панорaма дня';
+				text-transform: uppercase;
+				background-color: @primary-color;
+				color: #fff;
+				top: 0;
+				font-size: 12px;
+				line-height: 24px;
+				font-weight: bold;
+				right: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 6px;
+				padding-bottom: 6px;
+			}
+		}
+	}
+
+	&__link {
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		display: block;
+	}
+
+	&__description {
+		font-size: 14px;
+		line-height: 24px;
+		color: @secondary-color;
+		padding-left: 18px;
+		padding-right: 18px;
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
+
+		&--full {
+			background-color: @bg-grey;
+			.container();
+			padding-bottom: 21px;
+		}
+	}
+
+	&__author {
+		font-weight: bold;
+		font-style: normal;
+		margin-top: 18px;
+	}
+
+	&__time {
+		font-size: 12px;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-left: 4px;
+	}
+
+	&__text {
+		flex-grow: 1;
+	}
+
+	&__like {
+		padding-left: 32px;
+		position: relative;
+		padding-top: 9px;
+
+		&:before {
+			position: absolute;
+			display: block;
+			content: '';
+			width: 13px;
+			height: 12px;
+			background-image: url("../img/icon-heart.svg");
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: 100% 100%;
+			top: 67%;
+			transform: translateY(-50%);
+			left: 0;
+			cursor: pointer;
+		}
+	}
+
+	&__liked {
+		text-transform: uppercase;
+		color: @primary-color;
+		font-size: 12px;
+		line-height: 24px;
+	}
+
+	&__like-count {
+	}
+
+	&__wrapper {
+		.container();
+		display: flex;
+		flex-direction: column;
+
+	}
+}
+
+.download {
+	background-color: @bg-grey;
+	&__container {
+		padding-top: 20px;
+	}
+
+	&__picture {
+		width: 280px;
+		margin: 0 auto;
+	}
+
+	&__tools {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 67px;
+		padding-top: 36px;
+		position: relative;
+		overflow: hidden;
+
+		&::after {
+			position: absolute;
+			display: block;
+			content: '';
+			height: 2px;
+			width: 300%;
+			bottom: 0;
+			z-index: 3;
+			background-color: #dddfe0;
+		}
+	}
+
+	&__checkbox {
+		display: none;
+	}
+
+	&__label {
+
+		&--fill {
+			margin-left: 34px;
+			margin-right: 40px;
+		}
+
+	}
+
+	&__svg {
+		fill: #b5b9be;
+
+		&:hover {
+			fill: #8d949b;
+		}
+
+		&--crop {
+			width: 48px;
+			height: 44px;
+		}
+
+		&--fill {
+			width: 48px;
+			height: 43px;
+
+		}
+
+		&--contrast {
+			width: 48px;
+			height: 32px;
+		}
+	}
+
+	&__bar {
+		display: none;
+		position: absolute;
+		width: 240px;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 2px;
+		bottom: 36px;
+		background-color: @secondary-color;
+	}
+
+	&__toggle {
+		display: block;
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		top: 50%;
+		background-color: #fff;
+		z-index: 2;
+		transform: translateY(-50%);
+		border: 2px solid @primary-color;
+		cursor: pointer;
+
+		&:active {
+			background-color: @primary-color;
+		}
+
+		&--crop {
+			left: 30px;
+		}
+
+		&--fill {
+			left: 60px;
+		}
+
+		&--contrast {
+			left: 100px;
+		}
+	}
+
+	&__btn-wrapper {
+		.container();
+		padding-top: 37px;
+		padding-bottom: 41px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	&__btn {
+		margin-bottom: 12px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.download__checkbox:checked + .download__label .download__svg {
+	fill: @primary-color;
+}
+
+.download__checkbox:checked + .download__label .download__bar {
+	display: block;
+}
+
+@media @tablet-widths {
+	.photos__wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.photos__heading {
+		padding-top: 92px;
+		padding-bottom: 76px;
+	}
+
+	.photos__footing {
+		padding-top: 45px;
+		padding-bottom: 69px;
+	}
+
+	.photos__title {
+		font-size: 18px;
+	}
+
+	.photos__item {
+		width: 300px;
+		min-height: 455px;
+		padding-bottom: 23px;
+	}
+
+	.photos__item--full {
+		width: 100%;
+		height: auto;
+		margin-bottom: 27px;
+	}
+
+	.photos__item--full:before {
+		top: 57px;
+		right: 31px;
+	}
+
+	.photos__author {
+		margin-top: 24px;
+	}
+
+	.photos__author--full {
+		align-self: flex-start;
+		order: 1;
+	}
+
+	.photos__like {
+		padding: 0;
+	}
+
+	.photos__like--full {
+		width: auto;
+		align-self: flex-start;
+		order: 2;
+		position: relative;
+		top: 24px;
+		padding: 0;
+		padding-right: 31px;
+	}
+
+	.photos__like {
+		margin-top: 12px;
+		&:before {
+			top: 50%;
+			left: 93.5%;
+		}
+	}
+
+	.photos__like--full {
+		margin-top: 0;
+		&:before {
+			left: 106px;
+		}
+	}
+
+	.photos__text--full {
+		order: 3;
+	}
+
+	.photos__description {
+		padding-left: 28px;
+		padding-right: 28px;
+
+	}
+
+	.photos__description--full {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-left: 28px;
+		padding-right: 28px;
+		padding-bottom: 25px;
+	}
+
+	.download__picture {
+		margin: 0;
+		width: 300px;
+	}
+
+	.download__container {
+		.container();
+		padding-top: 57px;
+	}
+
+	.download__form {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.download__instruments {
+		width: 275px;
+	}
+
+	.download__tools {
+		padding-top: 6px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.download__tools::after {
+		display: none;
+	}
+
+	.download__label {
+		position: relative;
+		width: 100%;
+
+		&::after {
+			position: absolute;
+			display: block;
+			content: '';
+			height: 2px;
+			width: 100%;
+			bottom: -18px;
+			z-index: 3;
+			background-color: #dddfe0;
+		}
+	}
+
+	.download__label--fill {
+		margin: 0;
+		margin-top: 43px;
+		margin-bottom: 34px;
+	}
+
+	.download__svg--crop {
+		width: 29px;
+		height: 25px;
+	}
+
+	.download__svg--fill {
+		width: 29px;
+		height: 25px;
+	}
+
+	.download__svg--contrast {
+		width: 32px;
+		height: 16px;
+	}
+
+	.download__svg {
+		fill: @primary-color;
+	}
+
+	.download__svg:hover {
+		fill: @primary-color;
+	}
+
+	.download__bar {
+		display: block;
+		bottom: 55%;
+		left: 156px;
+		transform: translateY(-50%) translateX(-50%);
+		width: 202px;
+	}
+
+	.download__btn-wrapper {
+		padding-top: 20px;
+		padding-bottom: 54px;
+	}
+
+	.download__btn {
+		margin-bottom: 24px;
+	}
+}
+
+@media @desktop-widths {
+
+	.photos__heading {
+		padding-bottom: 88px;
+	}
+
+	.photos__item--full:before {
+		top: 54px;
+		right: 10.1%;
+	}
+
+	.photos__description--full {
+		padding-bottom: 24px;
+	}
+
+	.photos__item {
+		margin-bottom: 53px;
+		min-height: 555px;
+	}
+
+	.photos__item--full {
+		margin-bottom: 27px;
+	}
+
+	.download__instruments {
+		width: 410px;
+	}
+
+	.download__btn-wrapper {
+		flex-direction: row;
+	}
+
+	.photos__footing {
+		padding-top: 6px;
+		padding-bottom: 66px;
+	}
+
+	.download {
+		background-color: #fff;
+	}
+
+	.download__container {
+		background-color: @bg-grey;
+		padding-left: 80px;
+		padding-right: 60px;
+		padding-bottom: 49px;
+	}
+
+	.download__btn {
+		width: 183px;
+		margin-bottom: 0;
+	}
+
+	.download__svg--crop {
+		width: 44px;
+		height: 44px;
+	}
+
+	.download__svg--fill {
+		width: 44px;
+		height: 43px;
+	}
+
+	.download__svg--contrast {
+		width: 44px;
+		height: 32px;
+	}
+
+	.download__label {
+		height: 52px;
+		margin-top: 0;
+		margin-bottom: 22px;
+
+		&::after {
+			bottom: -2px;
+		}
+	}
+
+	.download__label--fill {
+		margin-bottom: 18px;
+	}
+
+	.download__tools {
+		padding-top: 0;
+	}
+
+	.download__bar {
+		width: 288px;
+		left: 236px;
+		bottom: 60%;
+	}
+
+	.download__btn-wrapper {
+		padding-top: 60px;
+		padding-bottom: 8px;
+	}
+}
