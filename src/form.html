@@ -9,7 +9,9 @@
 <body>
 @@include('./template/blocks/page-header.html')
 <main>
-@@include('./template/blocks/intro.html')
+@@include('./template/blocks/intro.html', {
+	"intro__text": "Конкурс на самое безбашенное<br>путешествие с Пинк"
+	})
  <form action="#" class="contest-form">
  	<div class="contest-form__heading">
  			<p class="contest-form__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
