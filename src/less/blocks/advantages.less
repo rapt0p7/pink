@@ -41,19 +41,32 @@
 		display: flex;
 		flex-direction: column;
 		padding-top: 82px;
-		padding-bottom: 319px;
-		background-image: url("../img/iphone-screen-mobile@1x.png");
-		background-repeat: no-repeat;
-		background-position: 50% 109%;
 	}
 
 	&__item {
 		text-align: center;
 		position: relative;
 		margin-bottom: 32px;
+		overflow: hidden;
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		&--friend {
+			padding-bottom: 319px;
+		}
+	}
+
+	&__pic {
+		display: none;
+
+		&--friend {
+			display: block;
+			left: 50%;
+			transform: translateX(-50%);
+			position: absolute;
+			bottom: -42px;
 		}
 	}
 
@@ -149,6 +162,20 @@
 			text-align: left;
 			margin-bottom: 35px;
 			padding-left: 310px;
+			overflow: visible;
+
+			&--friend {
+				padding-bottom: 0;
+			}
+		}
+
+		&__pic {
+			max-width: 100%;
+
+			&--friend {
+				left: 0;
+				transform: translateX(0);
+			}
 		}
 
 		&__list {
@@ -156,8 +183,6 @@
 			position: relative;
 			padding-top: 77px;
 			padding-bottom: 43px;
-			background-image: url("../img/iphone-screen-3-tablet@1x.png");
-			background-position: 0.5% 100%;
 		}
 	}
 }
@@ -183,38 +208,23 @@
 
 		&__list {
 			flex-direction: row;
+			justify-content: space-between;
 			padding-left: 0;
 			padding-top: 0;
-			background-image: none;
 		}
 
 		&__item {
 			text-align: center;
-			padding-top: 358px;
-			width: 33.3%;
-			background-repeat: no-repeat;
+			padding: 0;
+			width: 31.3%;
+			padding: 0;
 			margin-bottom: 0;
+		}
 
-				&--mood {
-					background-image: url("../img/iphone-screen-1-desktop@1x.png");
-					padding-left: 18px;
-					padding-right: 30px;
-					background-position: 4px 0;
-				}
-
-				&--world {
-					background-image: url("../img/iphone-screen-2-desktop@1x.png");
-					padding-left: 33px;
-					padding-right: 32px;
-					background-position: 14px 0;
-				}
-
-				&--friend {
-					background-image: url("../img/iphone-screen-3-desktop@1x.png");
-					padding-left: 44px;
-					padding-right: 30px;
-					background-position: 21px 0;
-				}
+		&__pic {
+			display: block;
+			position: static;
+			margin-bottom: 56px;
 		}
 
 		&__diagram {
@@ -237,6 +247,8 @@
 				line-height: 30px;
 				font-size: 30px;
 				margin-bottom: 24px;
+				padding-left: 30px;
+				padding-right: 30px;
 
 			&--diagram {
 				padding-left: 367px;
@@ -247,6 +259,8 @@
 		&__description {
 				font-size: 18px;
 				line-height: 30px;
+				padding-left: 25px;
+				padding-right: 25px;
 
 			&--diagram {
 				padding-left: 367px;

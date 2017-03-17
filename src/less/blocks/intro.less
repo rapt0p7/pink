@@ -1,6 +1,6 @@
 .intro {
 	background-color: @bg-primary;
-	background-image: url(../img/bg-back-mobile@1x.jpg);
+	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-position: top center;
 	background-size: auto 450px;
 	background-repeat: no-repeat;
@@ -22,6 +22,15 @@
 	}
 }
 
+@media @mobile-widths {
+
+	@media @retina {
+		.intro {
+			background-image: url("../img/bg-back-mobile@2x.jpg");
+		}
+	}
+}
+
 @media @tablet-widths {
 
 	.intro {
@@ -38,6 +47,12 @@
 			line-height: 60px;
 		}
 	}
+
+	@media @retina {
+		.intro {
+			background-image: url("../img/bg-back-tablet@2x.jpg");
+		}
+	}
 }
 
 @media @desktop-widths {
@@ -49,6 +64,12 @@
 		&__container {
 			min-height: 394px;
 			padding-top: 71px;
+		}
+	}
+
+	@media @retina {
+		.intro {
+			background-image: url("../img/bg-back-desktop@2x.jpg");
 		}
 	}
 }
