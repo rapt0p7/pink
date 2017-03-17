@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Конкурс - Pink</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-header__container">
+					<a href="index.html" class="logo">
+						<svg class="logo__icon  logo__icon--mobile"><use xlink:href="img/symbol-defs.svg#logo-pink-white-mobile"></use></svg>
+						<svg class="logo__icon  logo__icon--tablet-pink"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-mobile"></use></svg>
+						<svg class="logo__icon  logo__icon--tablet"><use xlink:href="img/symbol-defs.svg#logo-pink-white-tablet"></use></svg>
+						<svg class="logo__icon  logo__icon--desktop-pink"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-desktop"></use></svg>
+						<svg class="logo__icon  logo__icon--desktop"><use xlink:href="img/symbol-defs.svg#logo-pink-white-desktop"></use></svg>
+					</a>
+
+			<span class="hamburger-menu">
+				<svg class="hamburger-menu__icon  hamburger-menu__icon--ham"><use xlink:href="img/symbol-defs.svg#icon-menu-burger"></use></svg>
+				<svg class="hamburger-menu__icon  hamburger-menu__icon--cross  hamburger-menu__icon--hidden"><use xlink:href="img/symbol-defs.svg#icon-menu-cross"></use></svg>
+			</span>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+					<li class="menu__item"><a class="menu__link" href="photo.html">Фотографии</a></li>
+					<li class="menu__item"><a class="menu__link" href="form.html">Конкурс</a></li>
+					<li class="menu__item">
+						<a class="menu__link" href="https://htmlacademy.ru/" target="_blank">HTML&nbsp;Academy</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="intro">
+			<div class="intro__container">
+				<h1 class="intro__heading">Фотографии<br>пользователей</h1>
+			</div>
+		</section>
+
+	<section class="photos">
+		<div class="photos__heading">
+			<p class="photos__title">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+		</div>
+		<div class="photos__item  photos__item--full">
+			<a href="#" class="photos__link">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+					<source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+					<img class="photos__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
+				</picture>
+			</a>
+			<blocqoute class="photos__description  photos__description--full">
+				<cite class="photos__author  photos__author--full">Анна<span class="photos__time">(5 минут назад)</span></cite>
+				<p class="photos__text  photos__text--full">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+				<div class="photos__like  photos__like--full">
+					<p class="photos__liked  photos__liked--full">Нравится: <span class="photos__like-count">215</span></p>
+				</div>
+			</blocqoute>
+		</div>
+		<div class="photos__wrapper">
+					<div class="photos__item">
+				<a href="#" class="photos__link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+						<source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+						<img class="photos__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Панорама">
+					</picture>
+				</a>
+				<blocqoute class="photos__description">
+					<cite class="photos__author">Левон<span class="photos__time">(5 часов назад)</span></cite>
+					<p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+					<div class="photos__like">
+						<p class="photos__liked">Нравится: <span class="photos__like-count">356</span></p>
+					</div>
+				</blocqoute>
+			</div>
+			<div class="photos__item">
+				<a href="#" class="photos__link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+						<source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+						<img class="photos__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Панорама">
+					</picture>
+				</a>
+				<blocqoute class="photos__description">
+					<cite class="photos__author">Антон<span class="photos__time">(12 часов назад)</span></cite>
+					<p class="photos__text">Соседи будут рады!</p>
+					<div class="photos__like">
+						<p class="photos__liked">Нравится: <span class="photos__like-count">666</span></p>
+					</div>
+				</blocqoute>
+			</div>
+			<div class="photos__item">
+				<a href="#" class="photos__link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+						<source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+						<img class="photos__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Панорама">
+					</picture>
+				</a>
+				<blocqoute class="photos__description">
+					<cite class="photos__author">Борис<span class="photos__time">(20 часов назад)</span></cite>
+					<p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+					<div class="photos__like">
+						<p class="photos__liked">Нравится: <span class="photos__like-count">215</span></p>
+					</div>
+				</blocqoute>
+			</div>
+			<div class="photos__item">
+				<a href="#" class="photos__link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+						<source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+						<img class="photos__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Панорама">
+					</picture>
+				</a>
+				<blocqoute class="photos__description">
+					<cite class="photos__author">Сергей<span class="photos__time">(25 часов назад)</span></cite>
+					<p class="photos__text">Самая кубанская в мире!</p>
+					<div class="photos__like">
+						<p class="photos__liked">Нравится: <span class="photos__like-count">4</span></p>
+					</div>
+				</blocqoute>
+			</div>
+			<div class="photos__item">
+				<a href="#" class="photos__link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+						<source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+						<img class="photos__img" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Панорама">
+					</picture>
+				</a>
+				<blocqoute class="photos__description">
+					<cite class="photos__author">Максим<span class="photos__time">(40 часов назад)</span></cite>
+					<p class="photos__text">Где снег-то?</p>
+					<div class="photos__like">
+						<p class="photos__liked">Нравится: <span class="photos__like-count">150</span></p>
+					</div>
+				</blocqoute>
+			</div>
+			<div class="photos__item">
+				<a href="#" class="photos__link">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+						<source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+						<img class="photos__img" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Панорама">
+					</picture>
+				</a>
+				<blocqoute class="photos__description">
+					<cite class="photos__author">Надежда<span class="photos__time">(45 часов назад)</span></cite>
+					<p class="photos__text">Всем GM и взаимные лайки!</p>
+					<div class="photos__like">
+						<p class="photos__liked">Нравится: <span class="photos__like-count">2560</span></p>
+					</div>
+				</blocqoute>
+			</div>
+		</div>
+		<div class="photos__footing">
+			<p class="photos__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+		</div>
+	</section>
+	<section class="download">
+		<div class="download__container">
+			<form action="/post" class="download__form">
+				<div class="download__picture">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+						<source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+						<img class="download__img" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Панорама">
+					</picture>
+				</div>
+				<div class="download__instruments">
+					<div class="download__tools">
+						<input class="download__checkbox" type="radio" name="tools" id="filter-1" checked>
+						<label class="download__label  download__label--crop" for="filter-1">
+							<span class="download__icon">
+								<svg class="download__svg  download__svg--crop"><use xlink:href="img/symbol-defs-editor.svg#icon-editor-crop"></use></svg>
+							</span>
+							<span class="download__bar  download__bar--crop">
+								<span class="download__toggle  download__toggle--crop"></span>
+							</span>
+						</label>
+						<input class="download__checkbox" type="radio" name="tools" id="filter-2">
+						<label class="download__label  download__label--fill" for="filter-2">
+							<span class="download__icon">
+								<svg class="download__svg  download__svg--fill"><use xlink:href="img/symbol-defs-editor.svg#icon-editor-fill"></use></svg>
+							</span>
+							<span class="download__bar  download__bar--fill">
+								<span class="download__toggle  download__toggle--fill"></span>
+							</span>
+						</label>
+						<input class="download__checkbox" type="radio" name="tools" id="filter-3">
+						<label class="download__label  download__label--contrast" for="filter-3">
+							<span class="download__icon">
+								<svg class="download__svg  download__svg--contrast"><use xlink:href="img/symbol-defs-editor.svg#icon-editor-contrast"></use></svg>
+							</span>
+							<span class="download__bar  download__bar--contrast">
+								<span class="download__toggle  download__toggle--contrast"></span>
+							</span>
+						</label>
+					</div>
+					<div class="download__btn-wrapper">
+						<input class="download__btn  btn  btn--round  btn--pink" type="submit" value="Запостить">
+						<input class="download__btn  btn  btn--round  btn--grey" type="reset" value="Отмена">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+</main>
+<footer class="page-footer  page-footer--form">
+	<div class="page-footer__container  page-footer__container--form">
+		<a href="#" class="logo">
+			<svg class="logo__icon  logo__icon--footer_t"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-mobile"></use></svg>
+			<svg class="logo__icon  logo__icon--footer_d"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-desktop"></use></svg>
+		</a>
+		<div class="social-btn">
+			<a class="social-btn__icon  social-btn__icon--tw" href="#">Twitter</a>
+			<a class="social-btn__icon  social-btn__icon--fb" href="#">Facebook</a>
+			<a class="social-btn__icon  social-btn__icon--yt" href="#">Youtube</a>
+		</div>
+		<div class="copyright">Разаработано <a class="copyright__icon" href="https://htmlacademy.ru/">HTML&nbsp;Academy</a></div>
+	</div>
+</footer>
+<script src="js/script.min.js"></script>
+</body>
+</html>

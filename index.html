@@ -2,25 +2,207 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pink</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <header class="page-header">
-	<a href="" class="logo">
-		<img src="" alt="">
-	</a>
-	<nav class="menu">
-		<ul class="menu__list">
-			<li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
-			<li class="menu__item"><a class="menu__link" href="#">Фотографии</a></li>
-			<li class="menu__item"><a class="menu__link" href="#">Конкурс</a></li>
-			<li class="menu__item">
-				<a class="menu__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
-			</li>
-		</ul>
-	</nav>
+	<div class="page-header__container">
+				<a href="index.html" class="logo">
+					<svg class="logo__icon  logo__icon--mobile"><use xlink:href="img/symbol-defs.svg#logo-pink-white-mobile"></use></svg>
+					<svg class="logo__icon  logo__icon--tablet-pink"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-mobile"></use></svg>
+					<svg class="logo__icon  logo__icon--tablet"><use xlink:href="img/symbol-defs.svg#logo-pink-white-tablet"></use></svg>
+					<svg class="logo__icon  logo__icon--desktop-pink"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-desktop"></use></svg>
+					<svg class="logo__icon  logo__icon--desktop"><use xlink:href="img/symbol-defs.svg#logo-pink-white-desktop"></use></svg>
+				</a>
+
+		<span class="hamburger-menu">
+			<svg class="hamburger-menu__icon  hamburger-menu__icon--ham"><use xlink:href="img/symbol-defs.svg#icon-menu-burger"></use></svg>
+			<svg class="hamburger-menu__icon  hamburger-menu__icon--cross  hamburger-menu__icon--hidden"><use xlink:href="img/symbol-defs.svg#icon-menu-cross"></use></svg>
+		</span>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+				<li class="menu__item"><a class="menu__link" href="photo.html">Фотографии</a></li>
+				<li class="menu__item"><a class="menu__link" href="form.html">Конкурс</a></li>
+				<li class="menu__item">
+					<a class="menu__link" href="https://htmlacademy.ru/" target="_blank">HTML&nbsp;Academy</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </header>
 
+<main>
+<section class="promo">
+	<div class="promo__container">
+		<div class="store">
+			<div class="store__container">
+				<h2 class="store__title">Взгляните на жизнь иначе!</h2>
+				<a href="#" class="btn  btn--round  btn--white">Скачать приложение</a>
+				<ul class="store__list">
+					<li class="store__item">
+						<a class="store__link  store__link--itunes" href="https://www.apple.com/itunes/" target="_blank"></a>
+					</li>
+					<li class="store__item">
+						<a class="store__link  store__link--gplay" href="https://play.google.com/store/apps" target="_blank"></a>
+					</li>
+					<li class="store__item">
+						<a class="store__link  store__link--winstore" href="https://www.microsoft.com/en-in/store/apps/windows-phone" target="_blank"></a>
+					</li>
+				</ul>
+				<p class="store__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="advantages">
+	<header class="advantages__header">
+		<h2 class="advantages__heading">Устали от серости мегаполиса?</h2>
+		<h2 class="advantages__heading">Нам есть, что вам<br>предложить!</h2>
+	</header>
+	<div class="advantages__inner">
+		<ul class="advantages__list">
+			<li class="advantages__item  advantages__item--mood">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+					<source media="(min-width: 700px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
+					<img class="advantages__pic  advantages__pic--mood" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Скриншот 1">
+				</picture>
+				<h3 class="advantages__title">Поднимает настроение</h3>
+				<p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+			</li>
+			<li class="advantages__item  advantages__item--world">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+					<source media="(min-width: 700px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
+					<img class="advantages__pic  advantages__pic--world" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Скриншот 2">
+				</picture>
+				<h3 class="advantages__title">Меняет мир вокруг</h3>
+				<p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			</li>
+			<li class="advantages__item  advantages__item--friend">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+					<source media="(min-width: 700px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+					<img class="advantages__pic  advantages__pic--friend" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Скриншот 3">
+				</picture>
+				<h3 class="advantages__title">Заводит новых друзей</h3>
+				<p class="advantages__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+			</li>
+		</ul>
+	</div>
+	<div class="advantages__diagram">
+			<h3 class="advantages__title  advantages__title--diagram">Эффект на 24 часа!</h3>
+			<p class="advantages__description  advantages__description--diagram">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+			<a href="#" class="advantages__more">Узнать больше об исследовании</a>
+	</div>
+</section>
+
+<section class="reviews">
+	<div class="reviews__container  slider">
+		<h2 class="reviews__tittle  visually-hidden">Отзывы</h2>
+		<div class="reviews__items  slider__items">
+			<blockquote class="reviews__item  slider__item">
+				<p class="reviews__text"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
+				<cite class="reviews__author">Николай Петров</cite>
+				<span class="reviews__author-info">25 лет, водитель трамвая</span>
+			</blockquote>
+		</div>
+		<input class="slider__input" type="radio" name="toggle" id="reviews-btn-1">
+		<input class="slider__input" type="radio" name="toggle" id="reviews-btn-2">
+		<input class="slider__input" type="radio" name="toggle" id="reviews-btn-3">
+		<div class="reviews__toggles  slider__toggles">
+			<label class="reviews__toggle  slider__toggle  slider__toggle--active" for="reviews-btn-1" ></label>
+			<label class="reviews__toggle  slider__toggle" for="reviews-btn-2" ></label>
+			<label class="reviews__toggle  slider__toggle" for="reviews-btn-3"></label>
+		</div>
+		<div class="reviews__controls">
+			<span class="reviews__control  reviews__control--prev"></span>
+			<span class="reviews__control  reviews__control--next"></span>
+		</div>
+	</div>
+</section>
+
+<section class="price">
+	<h2 class="price__title  visually-hidden">Цены</h2>
+	<table class="price__table">
+		<tbody>
+			<tr>
+				<th class="price__header  price__header--empty"></th>
+				<th class="price__header">База<br><span class="price__cost">1,99 USD</span>
+				</th>
+				<th class="price__header  price__header--hot">Стандарт<br><span class="price__cost">3,99 USD</span></th>
+				<th class="price__header">Анлим<br><span class="price__cost">9,99 USD</span></th>
+			</tr>
+			<tr>
+				<td class="price__option  price__option--mobile">Розовый фильтр</td>
+				<td class="price__option  price__option--inner  price__option--check">Розовый фильтр</td>
+				<td class="price__option  price__option--inner  price__option--check">Розовый фильтр</td>
+				<td class="price__option  price__option--inner  price__option--check">Розовый фильтр</td>
+			</tr>
+			<tr>
+				<td class="price__option  price__option--mobile">Смайлики</td>
+				<td class="price__option  price__option--inner  price__option--uncheck">Смайлики</td>
+				<td class="price__option  price__option--inner  price__option--check">Смайлики</td>
+				<td class="price__option  price__option--inner  price__option--check">Смайлики</td>
+			</tr>
+			<tr>
+				<td class="price__option  price__option--mobile">Комментарии</td>
+				<td class="price__option  price__option--inner  price__option--uncheck">Комментарии</td>
+				<td class="price__option  price__option--inner  price__option--uncheck">Комментарии</td>
+				<td class="price__option  price__option--inner  price__option--check">Комментарии</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="price__toggles  slider__toggles">
+		<label class="price__toggle  slider__toggle" for="reviews-btn-1" ></label>
+		<label class="price__toggle  slider__toggle  slider__toggle--active" for="reviews-btn-2" ></label>
+		<label class="price__toggle  slider__toggle" for="reviews-btn-3"></label>
+	</div>
+</section>
+
+<section class="contacts">
+	<div class="contacts__container">
+		<h2 class="contacts__heading">Остались вопросы?<br>Свяжитесь с нами!</h2>
+		<div class="contacts__item  contacts__item--half">
+			<p class="contacts__title">Звоните:</p>
+			<a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+		</div>
+		<div class="contacts__item  contacts__item--half">
+			<p class="contacts__title">Пишите:</p>
+			<a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+		</div>
+		<div class="contacts__item  contacts__item--adress">
+			<p class="contacts__title">Приезжайте в гости:</p>
+			<span class="contacts__text">ул. Большая<br>Конюшенная, 19/8</span>
+		</div>
+	</div>
+	<div class="map">
+		<div class="map__canvas" id="map-canvas"></div>
+	</div>
+</section>
+
+</main>
+<footer class="page-footer">
+	<div class="page-footer__container">
+		<a href="#" class="logo">
+			<svg class="logo__icon  logo__icon--footer_t"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-mobile"></use></svg>
+			<svg class="logo__icon  logo__icon--footer_d"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-desktop"></use></svg>
+		</a>
+		<div class="social-btn">
+			<a class="social-btn__icon  social-btn__icon--tw" href="#">Twitter</a>
+			<a class="social-btn__icon  social-btn__icon--fb" href="#">Facebook</a>
+			<a class="social-btn__icon  social-btn__icon--yt" href="#">Youtube</a>
+		</div>
+		<div class="copyright">Разаработано <a class="copyright__icon" href="https://htmlacademy.ru/">HTML&nbsp;Academy</a></div>
+	</div>
+</footer>
+
+<script src="js/script.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATOFb0WJSHyMrWKZK1y3-yMxJJGABIViQ&callback=initMap"
+	async defer></script>
 </body>
 </html>

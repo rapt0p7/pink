@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Конкурс - Pink</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="page-header">
+	<div class="page-header__container">
+				<a href="index.html" class="logo">
+					<svg class="logo__icon  logo__icon--mobile"><use xlink:href="img/symbol-defs.svg#logo-pink-white-mobile"></use></svg>
+					<svg class="logo__icon  logo__icon--tablet-pink"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-mobile"></use></svg>
+					<svg class="logo__icon  logo__icon--tablet"><use xlink:href="img/symbol-defs.svg#logo-pink-white-tablet"></use></svg>
+					<svg class="logo__icon  logo__icon--desktop-pink"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-desktop"></use></svg>
+					<svg class="logo__icon  logo__icon--desktop"><use xlink:href="img/symbol-defs.svg#logo-pink-white-desktop"></use></svg>
+				</a>
+
+		<span class="hamburger-menu">
+			<svg class="hamburger-menu__icon  hamburger-menu__icon--ham"><use xlink:href="img/symbol-defs.svg#icon-menu-burger"></use></svg>
+			<svg class="hamburger-menu__icon  hamburger-menu__icon--cross  hamburger-menu__icon--hidden"><use xlink:href="img/symbol-defs.svg#icon-menu-cross"></use></svg>
+		</span>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+				<li class="menu__item"><a class="menu__link" href="photo.html">Фотографии</a></li>
+				<li class="menu__item"><a class="menu__link" href="form.html">Конкурс</a></li>
+				<li class="menu__item">
+					<a class="menu__link" href="https://htmlacademy.ru/" target="_blank">HTML&nbsp;Academy</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<main>
+<section class="intro">
+	<div class="intro__container">
+		<h1 class="intro__heading">Конкурс на самое безбашенное<br>путешествие с Пинк</h1>
+	</div>
+</section>
+
+ <form action="#" class="contest-form">
+ 	<div class="contest-form__heading">
+ 			<p class="contest-form__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+ 		</div>
+ 	<div class="contest-form__container">
+  		<div class="contest-form__group  contest-form__group--name">
+ 			<div class="contest-form__input-wrapper">
+ 				<label class="contest-form__label  contest-form__label--pink  contest-form__label--name" for="firstname">Фамилия:</label>
+ 				<input class="contest-form__input  contest-form__input--name" type="text" name="name" id="firstname" placeholder="Укажите фамилию">
+ 			</div>
+ 			<div class="contest-form__input-wrapper">
+ 				<label class="contest-form__label  contest-form__label--pink  contest-form__label--name" for="secname">Имя:</label>
+ 				<input class="contest-form__input  contest-form__input--name" type="text" name="name" id="secname" placeholder="Введите ваше имя">
+ 			</div>
+ 			<div class="contest-form__input-wrapper">
+ 				<label class="contest-form__label  contest-form__label--pink  contest-form__label--name" for="lastname">Отчество:</label>
+ 				<input class="contest-form__input  contest-form__input--name" type="text" name="name" id="lastname" placeholder="Ну и отчество тоже">
+ 			</div>
+ 		</div>
+  		<div class="contest-form__group  contest-form__group--border  contest-form__group--achiv">
+ 			<h3 class="contest-form__title">Ваши безбашенные достижения в путешествии</h3>
+ 			<input class="contest-form__checkbox" type="checkbox" name="achievment" id="selphie">
+ 			<label class="contest-form__label  contest-form__label--checkbox" for="selphie">Сделал селфи с акулой</label>
+ 			<input class="contest-form__checkbox" type="checkbox" name="achievment" id="sun">
+ 			<label class="contest-form__label  contest-form__label--checkbox" for="sun">Обгорел на пляже</label>
+ 			<input class="contest-form__checkbox" type="checkbox" name="achievment" id="norris">
+ 			<label class="contest-form__label  contest-form__label--checkbox" for="norris">Видел Чака Норриса</label>
+ 			<input class="contest-form__checkbox" type="checkbox" name="achievment" id="souvenirs">
+ 			<label class="contest-form__label  contest-form__label--checkbox" for="souvenirs">Накупил сувениров</label>
+ 			<input class="contest-form__checkbox" type="checkbox" name="achievment" id="piza">
+ 			<label class="contest-form__label  contest-form__label--checkbox" for="piza">Удержал башню</label>
+ 			<input class="contest-form__checkbox" type="checkbox" name="achievment" id="hotel">
+ 			<label class="contest-form__label  contest-form__label--checkbox" for="hotel">Разгромил отель</label>
+ 		</div>
+  		<div class="contest-form__group  contest-form__group--border  contest-form__group--contact">
+  			<h3 class="contest-form__title">Контактная информация</h3>
+ 			<div class="contest-form__input-wrapper  contest-form__input-wrapper--tel">
+ 				<label class="contest-form__label  contest-form__label--pink" for="tel">Номер телефона</label>
+ 				<input class="contest-form__input" type="text" name="contact" id="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+ 			</div>
+ 			<div class="contest-form__input-wrapper  contest-form__input-wrapper--mail">
+ 				<label class="contest-form__label  contest-form__label--pink" for="mail">Адрес почты</label>
+ 				<input class="contest-form__input" type="text" name="contact" id="mail" placeholder="Введите почту">
+ 			</div>
+ 		</div>
+ 		<div class="contest-form__group  contest-form__group--border  contest-form__group--app">
+ 			<h3 class="contest-form__title">С каким приложением путешествовали?</h3>
+ 			<input class="contest-form__radio" type="radio" name="app" id="ios">
+ 			<label class="contest-form__label  contest-form__label--radio" for="ios">Pink для iOS</label>
+ 			<input class="contest-form__radio" type="radio" name="app" id="android">
+ 			<label class="contest-form__label  contest-form__label--radio" for="android">Pink на Android</label>
+ 			<input class="contest-form__radio" type="radio" name="app" id="win">
+ 			<label class="contest-form__label  contest-form__label--radio" for="win">Windows Phone</label>
+ 		</div>
+ 		<div class="contest-form__group  contest-form__group--border  contest-form__group--emotions">
+ 			<legend class="contest-form__legend">Опишите свои эмоции</legend>
+ 			<h3 class="contest-form__title  contest-form__title--emotions">Опишите свои эмоции</h3>
+ 			<textarea class="contest-form__textarea" name="emotions" id="howit" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+ 		</div>
+ 		<input class="contest-form__btn  btn  btn--square" type="submit" value="Отправить форму">
+ 	</div>
+ </form>
+</main>
+<footer class="page-footer  page-footer--form">
+	<div class="page-footer__container  page-footer__container--form">
+		<a href="#" class="logo">
+			<svg class="logo__icon  logo__icon--footer_t"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-mobile"></use></svg>
+			<svg class="logo__icon  logo__icon--footer_d"><use xlink:href="img/symbol-defs.svg#logo-pink-blue-desktop"></use></svg>
+		</a>
+		<div class="social-btn">
+			<a class="social-btn__icon  social-btn__icon--tw" href="#">Twitter</a>
+			<a class="social-btn__icon  social-btn__icon--fb" href="#">Facebook</a>
+			<a class="social-btn__icon  social-btn__icon--yt" href="#">Youtube</a>
+		</div>
+		<div class="copyright">Разаработано <a class="copyright__icon" href="https://htmlacademy.ru/">HTML&nbsp;Academy</a></div>
+	</div>
+</footer>
+<script src="js/script.min.js"></script>
+</body>
+</html>
