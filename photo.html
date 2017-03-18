@@ -8,7 +8,6 @@
 	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -32,9 +31,7 @@
 					<li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
 					<li class="menu__item"><a class="menu__link" href="photo.html">Фотографии</a></li>
 					<li class="menu__item"><a class="menu__link" href="form.html">Конкурс</a></li>
-					<li class="menu__item">
-						<a class="menu__link" href="https://htmlacademy.ru/" target="_blank">HTML&nbsp;Academy</a>
-					</li>
+					<li class="menu__item"><a class="menu__link" href="https://htmlacademy.ru/" target="_blank">HTML&nbsp;Academy</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -49,6 +46,7 @@
 
 	<section class="photos">
 		<div class="photos__heading">
+			<h2 class="photos__title  visually-hidden">Фотографии</h2>
 			<p class="photos__title">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
 		</div>
 		<div class="photos__item  photos__item--full">
@@ -59,13 +57,13 @@
 					<img class="photos__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
 				</picture>
 			</a>
-			<blocqoute class="photos__description  photos__description--full">
-				<cite class="photos__author  photos__author--full">Анна<span class="photos__time">(5 минут назад)</span></cite>
+			<div class="photos__description  photos__description--full">
+				<p class="photos__author  photos__author--full">Анна<span class="photos__time">(5 минут назад)</span></p>
 				<p class="photos__text  photos__text--full">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
 				<div class="photos__like  photos__like--full">
 					<p class="photos__liked  photos__liked--full">Нравится: <span class="photos__like-count">215</span></p>
 				</div>
-			</blocqoute>
+			</div>
 		</div>
 		<div class="photos__wrapper">
 					<div class="photos__item">
@@ -73,96 +71,96 @@
 					<picture>
 						<source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
 						<source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-						<img class="photos__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Панорама">
+						<img class="photos__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото">
 					</picture>
 				</a>
-				<blocqoute class="photos__description">
-					<cite class="photos__author">Левон<span class="photos__time">(5 часов назад)</span></cite>
+				<div class="photos__description">
+					<p class="photos__author">Левон<span class="photos__time">(5 часов назад)</span></p>
 					<p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
 					<div class="photos__like">
 						<p class="photos__liked">Нравится: <span class="photos__like-count">356</span></p>
 					</div>
-				</blocqoute>
+				</div>
 			</div>
 			<div class="photos__item">
 				<a href="#" class="photos__link">
 					<picture>
 						<source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
 						<source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-						<img class="photos__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Панорама">
+						<img class="photos__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото">
 					</picture>
 				</a>
-				<blocqoute class="photos__description">
-					<cite class="photos__author">Антон<span class="photos__time">(12 часов назад)</span></cite>
+				<div class="photos__description">
+					<p class="photos__author">Антон<span class="photos__time">(12 часов назад)</span></p>
 					<p class="photos__text">Соседи будут рады!</p>
 					<div class="photos__like">
 						<p class="photos__liked">Нравится: <span class="photos__like-count">666</span></p>
 					</div>
-				</blocqoute>
+				</div>
 			</div>
 			<div class="photos__item">
 				<a href="#" class="photos__link">
 					<picture>
 						<source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
 						<source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-						<img class="photos__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Панорама">
+						<img class="photos__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото">
 					</picture>
 				</a>
-				<blocqoute class="photos__description">
-					<cite class="photos__author">Борис<span class="photos__time">(20 часов назад)</span></cite>
+				<div class="photos__description">
+					<p class="photos__author">Борис<span class="photos__time">(20 часов назад)</span></p>
 					<p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
 					<div class="photos__like">
 						<p class="photos__liked">Нравится: <span class="photos__like-count">215</span></p>
 					</div>
-				</blocqoute>
+				</div>
 			</div>
 			<div class="photos__item">
 				<a href="#" class="photos__link">
 					<picture>
 						<source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
 						<source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-						<img class="photos__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Панорама">
+						<img class="photos__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото">
 					</picture>
 				</a>
-				<blocqoute class="photos__description">
-					<cite class="photos__author">Сергей<span class="photos__time">(25 часов назад)</span></cite>
+				<div class="photos__description">
+					<p class="photos__author">Сергей<span class="photos__time">(25 часов назад)</span></p>
 					<p class="photos__text">Самая кубанская в мире!</p>
 					<div class="photos__like">
 						<p class="photos__liked">Нравится: <span class="photos__like-count">4</span></p>
 					</div>
-				</blocqoute>
+				</div>
 			</div>
 			<div class="photos__item">
 				<a href="#" class="photos__link">
 					<picture>
 						<source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
 						<source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
-						<img class="photos__img" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Панорама">
+						<img class="photos__img" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото">
 					</picture>
 				</a>
-				<blocqoute class="photos__description">
-					<cite class="photos__author">Максим<span class="photos__time">(40 часов назад)</span></cite>
+				<div class="photos__description">
+					<p class="photos__author">Максим<span class="photos__time">(40 часов назад)</span></p>
 					<p class="photos__text">Где снег-то?</p>
 					<div class="photos__like">
 						<p class="photos__liked">Нравится: <span class="photos__like-count">150</span></p>
 					</div>
-				</blocqoute>
+				</div>
 			</div>
 			<div class="photos__item">
 				<a href="#" class="photos__link">
 					<picture>
 						<source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
 						<source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
-						<img class="photos__img" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Панорама">
+						<img class="photos__img" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото">
 					</picture>
 				</a>
-				<blocqoute class="photos__description">
-					<cite class="photos__author">Надежда<span class="photos__time">(45 часов назад)</span></cite>
+				<div class="photos__description">
+					<p class="photos__author">Надежда<span class="photos__time">(45 часов назад)</span></p>
 					<p class="photos__text">Всем GM и взаимные лайки!</p>
 					<div class="photos__like">
 						<p class="photos__liked">Нравится: <span class="photos__like-count">2560</span></p>
 					</div>
-				</blocqoute>
+				</div>
 			</div>
 		</div>
 		<div class="photos__footing">
@@ -171,12 +169,13 @@
 	</section>
 	<section class="download">
 		<div class="download__container">
+		<h2 class="download__title  visually-hidden">Загрузка фотографии</h2>
 			<form action="/post" class="download__form">
 				<div class="download__picture">
 					<picture>
 						<source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
 						<source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
-						<img class="download__img" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Панорама">
+						<img class="download__img" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Загружаемое фото">
 					</picture>
 				</div>
 				<div class="download__instruments">
