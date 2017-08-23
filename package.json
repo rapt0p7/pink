@@ -5,7 +5,7 @@
   "description": "Учебный проект Pink",
   "author": "Igor Zabrodin",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "@htmlacademy/editorconfig-cli": "~1.0.0",
     "browser-sync": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
