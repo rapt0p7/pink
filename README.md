@@ -1,5 +1,7 @@
 # Техническое задание на вёрстку
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rapt0p7/pink.svg)](https://greenkeeper.io/)
+
 * Название сайта: Pink
 * Домен: [Pink](http://rapt0p7.github.io/pink/)
 
