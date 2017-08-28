@@ -1,22 +1,13 @@
-{{#hasMixin}}.{{mixinName}}() {
-	background: url("{{{sprite}}}") no-repeat;
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
 }
 
-{{#hasCommon}}.{{commonName}} {
-	.{{mixinName}}();
+{{#shapes}}
+.icon-{{base}} {
+	font-size:({{height.inner}}/10)*1rem;
+	width:({{width.inner}}/{{height.inner}})*1em;
 }
-
-{{/hasCommon}}{{/hasMixin}}{{^hasMixin}}.{{commonName}}{{^hasCommon}}(){{/hasCommon}} {
-	background: url("{{{sprite}}}") no-repeat;
-}
-
-{{/hasMixin}}{{#shapes}}{{#selector.shape}}{{expression}}{{^last}},
-{{/last}}(@width, @height){{/selector.shape}} {
-	{{^hasCommon}}{{#hasMixin}}.{{mixinName}}();{{/hasMixin}}{{^hasMixin}}.{{commonName}}();{{/hasMixin}}
-	{{/hasCommon}}background-position: {{position.relative.xy}};
-	background-size: @width*@svg-icon-count @height*@svg-icon-count;
-	width: @width;
-	height: @height;
-}
-
 {{/shapes}}

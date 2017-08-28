@@ -1,0 +1,36 @@
+{
+	"path" : {
+		"build": {
+			"common"       : "build/",
+			"js"           : "build/js/",
+			"css"          : "build/css/",
+			"img"          : "build/img/",
+			"fonts"        : "build/fonts/"
+		},
+		"src": {
+			"html"         : "src/*.html",
+			"js"           : "src/js/[^_]*.js",
+			"jshint"       : "src/js/*.js",
+			"css"          : "src/less/style.less",
+			"less"         : "src/less/",
+			"img"          : "src/img/*.{gif,png,jpg,jpeg,svg}",
+      "pngsprite"    : "src/img/png-sprite/*.*",
+      "svgsprite"    : "src/img/svg-sprite/*.*",
+			"fonts"        : "src/fonts/**/*.*",
+			"png2x"        : "src/img/png-sprite/*-2x.png",
+			"htaccess"     : "src/.htaccess"
+		},
+		"watch": {
+			"html"         : "src/**/*.html",
+			"js"           : "src/js/**/*.js",
+			"css"          : "src/less/**/*.*",
+			"img"          : "src/img/**/*.*",
+			"fonts"        : "src/fonts/**/*.*",
+			"htaccess"     : "src/.htaccess",
+			"pngsprite"    : "src/img/png-sprite/*.*",
+			"svgsprite"    : "src/img/svg-sprite/*.*"
+		},
+		"clean"          : "./build/",
+		"outputDir"      : "./build/**/*"
+	}
+}

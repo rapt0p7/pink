@@ -1,0 +1,24 @@
+engines:
+	eslint:
+		enabled: true
+	csslint:
+		enabled: true
+	duplication:
+		enabled: false
+	stylelint:
+		enabled: true
+	markdownlint:
+		enabled: true
+	git-legal:
+		enabled: true
+ratings:
+	 paths:
+	 - src/**
+	 - "**.js"
+	 - "**.less"
+	 - "**.css"
+	 - "**.md"
+	 - "package.json"
+exclude_paths:
+- "src/js/usesvg.js"
+- "build/**"

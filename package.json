@@ -6,19 +6,31 @@
   "author": "Igor Zabrodin",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
+    "babel-preset-es2015": "latest",
+    "babel-register": "latest",
     "browser-sync": "latest",
-    "gulp": "latest",
+    "cz-conventional-changelog": "latest",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "latest",
+    "gulp-cheerio": "latest",
     "gulp-concat": "latest",
     "gulp-csscomb": "latest",
     "gulp-csso": "latest",
     "gulp-dest-clean": "latest",
     "gulp-file-include": "latest",
     "gulp-gh-pages": "latest",
+    "gulp-hub": "^4.1.1",
+    "gulp-if": "latest",
     "gulp-imagemin": "latest",
     "gulp-jshint": "latest",
     "gulp-less": "latest",
     "gulp-less-reporter": "latest",
+    "gulp-load-plugins": "latest",
     "gulp-newer": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
@@ -27,11 +39,11 @@
     "gulp-size": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-svg-sprite": "latest",
+    "gulp-svgmin": "latest",
     "gulp-uglify": "latest",
     "gulp-watch": "latest",
     "gulp.spritesmith": "latest",
-    "jshint": "latest",
-    "jshint-stylish": "latest",
+    "imagemin-pngquant": "latest",
     "less-plugin-group-css-media-queries": "latest",
     "merge-stream": "latest",
     "vinyl-buffer": "latest"
@@ -44,9 +56,16 @@
     "*.json"
   ],
   "engines": {
-    "node": "7.5"
+    "node": "8.0"
   },
   "dependencies": {
-    "imagemin-pngquant": "latest"
+    "babel-eslint": "^7.2.3",
+    "glob": "^7.1.2",
+    "shelljs": "^0.7.8"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
